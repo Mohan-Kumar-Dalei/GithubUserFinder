@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Gilroy, sans-serif;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center px-4">
+
+    <h1 class="text-3xl md:text-4xl font-bold mb-2">GitHub User Finder</h1>
+    <p class="text-gray-400 mb-6">Search and view GitHub user profiles in style</p>
+
+    <div class="w-full max-w-md">
+        <div class="flex items-center gap-2">
+            <input type="text" placeholder="Enter GitHub username..."
+                class="usernameinp w-full px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <button class=" search px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md">
+                Search
+            </button>
+        </div>
+
+        <!-- Real User Card (Dummy Data) -->
+        <div class=" card bg-[#1e293b] p-6 rounded-xl w-full flex items-start space-x-6 mt-6 shadow-lg">
+            <!-- <img src="https://avatars.githubusercontent.com/u/583231?v=4" alt="User Avatar"
+                class="w-20 h-20 rounded-full border-4 border-blue-600 object-cover" />
+
+            <div class="flex-1">
+                <h2 class="text-2xl font-bold">The Octocat</h2>
+                <p class="text-gray-400 mb-2">@octocat</p>
+                <p class="text-gray-300 mb-4">Just a friendly GitHub mascot trying to make your day better with commits.
+                </p>
+
+                <div class="grid grid-cols-3 gap-4 text-sm text-gray-300">
+                    <div>
+                        <span class="font-semibold text-white block">Repositories</span>
+                        8
+                    </div>
+                    <div>
+                        <span class="font-semibold text-white block">Followers</span>
+                        3940
+                    </div>
+                    <div>
+                        <span class="font-semibold text-white block">Following</span>
+                        9
+                    </div>
+                </div>
+
+                <div class="mt-4 text-sm text-gray-400">
+                    <p><span class="text-white font-medium">Location:</span> San Francisco</p>
+                    <p><span class="text-white font-medium">Company:</span> GitHub</p>
+                    <p><span class="text-white font-medium">Blog:</span> <a href="https://github.blog"
+                            class="text-blue-400 hover:underline" target="_blank">github.blog</a></p>
+                </div>
+            </div> -->
+        </div>
+
+        <footer class="mt-10 text-sm text-gray-500 text-center">
+            Built with <span class="text-red-500">♥</span> using Tailwind CSS
+        </footer>
+
+        <script src="async_project.js"></script>
+    </div>
+
+</body>
+
+</html>
